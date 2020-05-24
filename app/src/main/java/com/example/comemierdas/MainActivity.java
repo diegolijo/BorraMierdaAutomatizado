@@ -1,6 +1,7 @@
 package com.example.comemierdas;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -9,9 +10,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.room.Room;
 
-import com.example.comemierdas.BD.*;
+import com.example.comemierdas.galeria.ListaFotos;
 
 import java.io.File;
 import java.util.Objects;
@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     //---------------------- botones ----------------------
     public void onClick(View v) {
         selectCarpeta();
@@ -62,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
         wasaPath = "/storage/self/primary/WhatsApp/Media/WhatsApp Audio";
         desmarcarBotones();
         marcarBoton(botonAudio);
+    }
+
+
+    public void onClickIntent(View v) {
+        Intent intent = new Intent(this, ListaFotos.class);
+        startActivity(intent);
     }
 
     public void desmarcarBotones() {

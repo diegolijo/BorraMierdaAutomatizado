@@ -102,4 +102,15 @@
         app:layout_constraintBottom_toBottomOf="@+id/buttonVideo"
         app:layout_constraintStart_toEndOf="@+id/buttonVideo" />
 
+    <Button
+        android:id="@+id/buttonVer"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:onClick="onClickIntent"
+        android:text="Ver"
+        android:textSize="10dp"
+        android:textColor="#9B9B9B"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAudio"
+        app:layout_constraintStart_toEndOf="@+id/buttonAudio" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
