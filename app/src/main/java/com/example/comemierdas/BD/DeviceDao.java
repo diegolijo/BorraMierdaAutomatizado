@@ -18,7 +18,7 @@ public interface DeviceDao {
     @Query("SELECT COUNT(*) FROM archivo")
     int countArchivos();
 
-//    @Query("SELECT * FROM usuario WHERE usuario LIKE :usuario  LIMIT 1")
+//    @Query("SELECT * FROM archivo WHERE path LIKE :usuario  LIMIT 1")
 //    Usuario selectUsuario(String usuario);
 //
 //    @Query("SELECT * FROM pedido WHERE usuario = :usuario AND estado = :estado")
