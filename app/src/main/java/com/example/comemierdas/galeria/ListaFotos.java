@@ -15,14 +15,6 @@ public class ListaFotos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_fotos);
         getSupportActionBar().hide();
-
-
-        ImageView imageView = findViewById(R.id.imageView);
-        Uri uriImage = Uri.parse("android.resource://" + getPackageName() + "/" + R.drawable.fotos);
-        //Uri uriImagen = Uri.parse("R.drawable.mi_imagen");
-        imageView.setImageURI(uriImage);
-
-
     }
 
 
